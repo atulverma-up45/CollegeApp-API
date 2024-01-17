@@ -20,13 +20,13 @@ userRoutes.post("/logIn", loginController);
 userRoutes.post("/changePassword", authenticate, changePasswordController);
 userRoutes.post("/logoutUser", authenticate, logoutUserContoller);
 
-// Use 'get' with a callback function for the protected route
-userRoutes.get("/student", authenticate, isStudent, (req, res) => {
-  res.send("this is secure of student");
-});
+// // Use 'get' with a callback function for the protected route
+// userRoutes.get("/student", authenticate, isStudent, (req, res) => {
+//   res.send("this is secure of student");
+// });
 
-userRoutes.get("/teacher", authenticate, isTeacher, (req, res) => {
-  res.send("this is secure of teacher");
-});
+// userRoutes.get("/teacher", authenticate, isTeacher, (req, res) => {
+//   res.send("this is secure of teacher");
+// });
 
 export default userRoutes;
