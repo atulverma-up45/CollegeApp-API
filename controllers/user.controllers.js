@@ -100,17 +100,17 @@ export const signupController = async (req, res) => {
       contactNumber,
     } = req.body;
 
-    console.log(
-      "data",
-      firstName,
-      lastName,
-      email,
-      password,
-      confirmPassword,
-      otp,
-      gender,
-      contactNumber
-    );
+    // console.log(
+    //   "data",
+    //   firstName,
+    //   lastName,
+    //   email,
+    //   password,
+    //   confirmPassword,
+    //   otp,
+    //   gender,
+    //   contactNumber
+    // );
     // Validate the data
     if (
       !firstName ||
