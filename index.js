@@ -19,10 +19,8 @@ app.set("view engine", "ejs");
 app.set("views", "./views");
 app.engine("ejs", ejsMate);
 
-
 // Serve static files from the 'public' directory
 app.use(express.static(join(__dirname, "public")));
-
 
 // Middleware to parse json data
 app.use(express.json());
@@ -35,9 +33,8 @@ app.use(cookieParser());
 connectDB();
 
 // home page url
-app.get("/",  (req, res) => {
+app.get("/", (req, res) => {
   res.render("./frontent/index.ejs");
-
 });
 
 // Mounting the userRoutes on the root (/) path
